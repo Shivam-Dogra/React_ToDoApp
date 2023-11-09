@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body {
+  background-color: #ee7b55;
+}
+
+.todos-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-card {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  width: 440px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(236, 5, 5, 0.1);
+}
+
+.title, .desc {
+  color:#c0392b;
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+.title {
+  font-size: 50px;
+  margin: -5px;
+}
+
+.desc {
+  margin-top: -30px;
+  color:#333
+}
+
+.todos-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  width: 400px;
+  padding: 20px;
+  margin: 10px auto;
+  box-shadow: 0 2px 4px rgba(235, 8, 8, 0.1);
+}
+
+.search-btn {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+li {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  list-style: none;
+  background-color: #f4f4f4;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-top: 20px;
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 360px;
+  margin-left: -35px;
+}
+
+.todos {
+  margin-right: 0px;
+}
+
+.deleteBtn {
+  margin-left: 20px;
+  padding: 2px 4px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.deleteBtn:hover {
+  background-color: #c0392b;
+}
+
+.addTodos {
+  background-color: #c0392b; 
+  color: #fff; 
+  font-size: 24px; 
+  border: none; 
+  border-radius: 50%; 
+  width: 48px; 
+  height: 48px; 
+  cursor: pointer;   
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+  transition: background-color 0.3s;
+}
+
+.addTodos:hover {
+  background-color: #e74c3c; 
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  outline: none;
+}
+
+input[type="text"]::placeholder {
+  color: #888;
+}
+
+input[type="text"]:focus {
+  border-color: #c0392b;
+  box-shadow: 0 0 8px #e74c3c;
+}
+
+.task-completed-true {
+  text-decoration: line-through;
+  background-color: #59db59;
+}
+
